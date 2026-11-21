@@ -224,7 +224,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 bin/
-lib/
+lib/**
 include/
 lib64
 pyenv.cfg

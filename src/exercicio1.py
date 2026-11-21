@@ -38,7 +38,9 @@ while frame_cont <= frames:
     print(f'Frame: {frame_cont}')
     frame_cont += 1
     tick_atual = cv2.getTickCount()
-    taxa_fps = 1000/(tick_atual - ultimo_tick)
+    
+    segundos = (tick_atual - ultimo_tick)/cv2.getTickFrequency()
+    taxa_fps = 1 / segundos
     tick_atual = ultimo_tick
     print(f'Taxa de fps: {taxa_fps}')
 
